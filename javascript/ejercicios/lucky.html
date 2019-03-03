@@ -1,0 +1,35 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Autor: Alberto Ramos Rosellón-->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Número de la suerte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="lucky.css">
+    <script src="lucky.js"></script>
+
+</head>
+
+<body>
+    <img src="images/imagenlucky.jpg">
+    <div id="formulario">
+        <p>Introduce tu fecha de nacimiento</p>
+        <form>
+            <p>Día</p><input type="number" name="dia" id="dia" onchange="Dia()">
+            <p>Mes</p><input type="number" name="mes" id="mes" onchange="Mes()">
+            <p>Año</p><input type="number" name="año" id="año" onchange="Año(); Calcular()">
+            <!--<input type="button" name="Ver total" value="CALCULAR" onclick="calcular()"
+             id="boton">-->
+            <p>Tu número de la suerte es: </p>
+            <p id="resultado">X</p>
+        </form>
+        <p id="link"><a href="../index.html">Volver al índice</a></p>
+    </div>
+
+</body>
+
+</html>

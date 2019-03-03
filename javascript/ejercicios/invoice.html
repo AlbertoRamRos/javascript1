@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Autor: Alberto Ramos Rosellón-->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="invoice.css">
+    <script src="invoice.js"></script>
+
+</head>
+
+<body>
+    <h1>Compras Calculator</h1>
+    <div id="tablas">
+        <table>
+            <tr>
+                <th></th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Producto 1:</td>
+                <td> <input type="number" name="precio1" id="precio1" value="0" onchange="calcular1()"> </td>
+                <td><input type="number" name="cantidad1" id="cantidad1" value="0" onchange="calcular1()"></td>
+                <td id="total1"><input type="number" name="total1" id="casilla1"></td>
+            </tr>
+            <tr>
+                <td>Producto 2:</td>
+                <td><input type="number" name="precio2" id="precio2" value="0" onchange="calcular2()"></td>
+                <td><input type="number" name="cantidad2" id="cantidad2" value="0" onchange="calcular2()"></td>
+                <td id="total2"><input type="number" name="total2" id="casilla2"></td>
+            </tr>
+            <tr>
+                <td>Producto 3:</td>
+                <td><input type="number" name="precio3" id="precio3" value="0" onchange="calcular3()"></td>
+                <td><input type="number" name="cantidad3" id="cantidad3" value="0" onchange="calcular3()"></td>
+                <td id="total3"><input type="number" name="total3" id="casilla3"></td>
+            </tr>
+            <br />
+            <tr>
+                <td>Sumas:</td>
+                <td></td>
+                <td></td>
+                <td id="totalsuma"><input type="number" name="totalsuma" id="casilla4"></td>
+            </tr>
+            <tr>
+                <td>IVA 21%:</td>
+                <td></td>
+                <td></td>
+                <td id="IVA"><input type="number" name="IVA" id="casilla5"></td>
+            </tr>
+            <tr>
+                <td>TOTAL:</td>
+                <td></td>
+                <td></td>
+                <td id="Total"><input type="text" id="casilla6"></td>
+            </tr>
+        </table>
+    </div>
+    <input type="button" id="boton" name="Ver total" value="CALCULAR" onclick="Suma(); iva(); total()">
+    <p id="link"><a href="../index.html">Volver al índice</a></p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body{
+    margin-top: 100px;
+    background-color:  gainsboro;
+    color: green;
+}
+#tablas{
+    border: 2px solid green;
+    border-radius:5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+#boton{
+    margin-top: 40px;
+    margin-left: 40%;
+    width: 180px;
+    height: 35px;
+}
+#boton{
+    color: red;
+    margin-left: 43%;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+p{
+    text-align: center;
+}
+#casilla1, #casilla2, #casilla3, #casilla4, #casilla5, #casilla6{
+    width: 120px;
+}
+#link{
+    margin-top: 150px;
+}
